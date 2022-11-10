@@ -3,24 +3,35 @@
 <head>
     <meta charset="ISO-8859-1"/>
     <title>Chat demo</title>
+    <link rel="stylesheet" href="text.css">
 </head>
 <body>
-<div>Sending message via JavaScript</div>
-<div>
-    <label for="connectionInput">IP Address</label>
-    <input id="connectionInput" type="text" >
-</div>
-<div>
-    <button id="connectionBtn" type="button">Connect</button>
-    <button id="disconnectionBtn" type="button">Disconnect</button>
-</div>
+<div class="container">
+    <div>
+        <h3>Connecting to another server</h3>
+        <div>
+            <label for="connectionInput">IP Address</label>
+            <input id="connectionInput" type="text">
+        </div>
+        <div>
+            <button id="connectionBtn" type="button">Connect</button>
+            <button id="disconnectionBtn" type="button">Disconnect</button>
+        </div>
+        <div>Sending messages</div>
+        <div>
+            <label for="sendInput">Send messages</label>
+            <input id="sendInput" type="text" >
+            <button id="sendBtn">Submit</button>
+        </div>
+    </div>
 
-<div>Sending messages</div>
 <div>
-    <label for="sendInput">Send messages</label>
-    <input id="sendInput" type="text" >
-    <button id="sendBtn">Submit</button>
+    <h3>Received messages from Java</h3>
+
 </div>
+<div/>
+
+
 
 <a onclick="refresh()" href>Refresh messages</a>
 <div>Messages:</div>

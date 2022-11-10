@@ -23,6 +23,13 @@ public class TestController {
         return "text";
     }
 
+//
+//    @GetMapping({"/"})
+//    public String getMEssages(Model model) {
+//        model.addAttribute("messages", testService.messages);
+//        return "";
+//    }
+
     @RequestMapping({"/clearMessages"})
     public String clear() {
         testService.messages.clear();

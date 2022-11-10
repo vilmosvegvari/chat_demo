@@ -21,4 +21,5 @@ public class ChatHandler extends TextWebSocketHandler {
         System.out.println(session.getId() + " " + message.toString());
         testService.messages.add(message.getPayload());
     }
+
 }
